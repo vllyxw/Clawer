@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça Login ou Registre-se - Clawer | Ursos de Pelúcia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/Design_sem_nome__2_-removebg-preview.ico">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo-removebg-preview.png" width="170px">
+            </div>
+    
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Início</a> </li>
+                    <li> <a href="produtos.html">Produtos</a> </li>
+                    <li> <a href="login.html">Conta</a> </li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="assets/cart.png" width="30px" height="30px"></a>
+            <img src="assets/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+    </div>
+
+    <!--- pag de login --->
+ 
+ <div class="account-page">
+     <div class="container">
+         <div class="row">
+             <div class="col-2">
+                 <img src="assets/oferta_ccexpress.png" width="90%">
+             </div>
+             <div class="col-2">
+                 <div class="form-container">
+                      <div class="form-btn">
+                          <span onclick="login()">Entrar</span>
+                          <span onclick="registrar()">Registrar</apan>
+                            <hr id="Indicator">
+                      </div>
+
+                      <form id="LoginForm">
+                          <input type="email" placeholder="E-mail">
+                          <input type="password" placeholder="Senha">
+                          <button type="submit" class="btn">Entrar</button>
+                          <a href="">Esqueci minha senha</a>
+                      </form>
+                      <form id="RegForm">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Confirme sua Senha">
+                        <button type="submit" class="btn">Registrar</button>
+                    </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>          
+
+
+<!--- footer --->
+
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Faça o Download do Nosso App</h3>
+                  <p>App Disponível para Android e IOS</p>
+                  <div class="app-logo">
+                      <img src="assets/play-store.png">
+                      <img src="assets/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="assets/logo-removebg-preview.png">
+                <p>© Clawer. Todos os Direitos Reservados</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Sobre Nós</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Avaliações</li>
+                    <li>Suporte</li>
+                    <li>Termos de Serviços</li>
+                </ul>
+            </div>
+    
+        </div>
+      </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+ 
+function registrar(){
+
+    RegForm.style.transform = "translateX(0px)"
+    LoginForm.style.transform = "translateX(0px)"
+    Indicator.style.transform = "translateX(100px)"
+}
+
+function login(){
+
+RegForm.style.transform = "translateX(300px)"
+LoginForm.style.transform = "translateX(300px)"
+Indicator.style.transform = "translateX(0px)"
+}
+
+</script>
+
+
+
+</body>
+</html>

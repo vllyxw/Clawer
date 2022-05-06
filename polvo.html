@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelúcia Polvo Fofo - Clawer | Ursos de Pelúcia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets/Design_sem_nome__2_-removebg-preview.ico">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="assets/logo-removebg-preview.png" width="170px">
+            </div>
+    
+            <nav>
+                <ul id="MenuItems">
+                    <li> <a href="index.html">Início</a> </li>
+                    <li> <a href="produtos.html">Produtos</a> </li>
+                    <li> <a href="login.html">Conta</a> </li>
+                </ul>
+            </nav>
+            <a href="carrinho.html"><img src="assets/cart.png" width="30px" height="30px"></a>
+            <img src="assets/menu.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+    </div>
+
+
+    <!--- produtos sozinho --->
+
+    <div class="small-container single-product"> 
+        <div class="row">
+            <div class="col-2">
+              <img src="assets/Home (5).png" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Início / Pelúcia Animal</p>
+                <h1>Pelúcia Polvo Fofo</h1>
+                <h4>R$54,90</h4>
+                <p>5X DE R$10,98 SEM JUROS</p>
+                <input type="number" value="1">
+                <a href="" class="btn">Adicione no Carrinho</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- titulo -->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produtos Relacionados</h2>
+            <a href="produtos.html">Ver Mais</a>
+        </div>
+    </div>
+
+
+    <div class="small-container">
+         
+           <div class="row">
+               <div class="col-4">
+                <a href="pinguimhellokitty.html"><img src="assets/produto1_ccexpress.png"></a>
+                <a href="pinguimhellokitty.html"><h4>Pelúcia Pinguim Hello Kitty</h4></a>
+                   <p>$69,90</p>
+               </div>
+               <div class="col-4">
+                <a href="couveflor.html"><img src="assets/produto2_ccexpress.png"></a>
+                <a href="couveflor.html"><h4>Pelúcia Couve Flor Fofo</h4></a>
+                <p>$54,90</p>
+               </div>
+            <div class="col-4">
+                <a href="carneiro.html"><img src="assets/produto3_ccexpress.png"></a>
+                <a href="carneiro.html"><h4>Pelúcia Carneiro Fofo</h4></a>
+                <p>$69,90</p>
+            </div>
+            <div class="col-4">
+                <a href="bebida.html"><img src="assets/produto4_ccexpress.png"></a>
+                <a href="bebida.html"><h4>Pelúcia Bebida Fofa</h4></a>
+                <p>$44,90</p>
+          </div>
+          
+ </div>
+
+ 
+
+<!--- footer --->
+
+  <div class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col-1">
+                  <h3>Faça o Download do Nosso App</h3>
+                  <p>App Disponível para Android e IOS</p>
+                  <div class="app-logo">
+                      <img src="assets/play-store.png">
+                      <img src="assets/app-store.png">
+                  </div>
+              </div>
+              <div class="footer-col-2">
+                <img src="assets/logo-removebg-preview.png">
+                <p>© Clawer. Todos os Direitos Reservados</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Sobre Nós</h3>
+                <ul>
+                    <li>Blog Post</li>
+                    <li>Avaliações</li>
+                    <li>Suporte</li>
+                    <li>Termos de Serviços</li>
+                </ul>
+            </div>
+    
+        </div>
+      </div>
+  </div>
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</body>
+</html>
